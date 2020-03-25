@@ -1,3 +1,27 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  //display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+body {
+  margin: 0;
+}
+
+.input {
+  padding: 0px auto;
+}
+
+.input textarea {
+  resize: none;
+  hyphens: auto;
+}
+
+.banner {
+  background-color: rgb(240, 240, 240);
+  padding: 10px 10px;
+  margin: 0px;
+}
