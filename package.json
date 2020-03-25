@@ -1,5 +1,7 @@
 {
   "name": "silbify",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "hyphen": "^1.2.1"
+  }
 }
