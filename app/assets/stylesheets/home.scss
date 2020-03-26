@@ -2,8 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .container {
-  //display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 
@@ -17,11 +16,62 @@ body {
 
 .input textarea {
   resize: none;
-  hyphens: auto;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(246, 246, 246);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  outline: none;
+  height: 40vh;
+  font-size: 15px;
+}
+
+.input {
+  margin: 20px 7%;
 }
 
 .banner {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(246, 246, 246);
   padding: 10px 10px;
   margin: 0px;
+  display: flex;
+  border-bottom: 1px solid black;
 }
+
+.banner-content {
+  display: flex;
+  margin: 0 auto;
+}
+
+#go-btn {
+  margin: 10px 0;
+  background-color: #5CB3CF;
+  padding: 5px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+  outline: none;
+  opacity: 0.6;
+}
+
+#go-btn:hover {
+  transition: 0.3s;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
