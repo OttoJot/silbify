@@ -1,8 +1,11 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.container {
-
+.container h1 {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  margin: 0px 0px;
 }
 
 
@@ -24,18 +27,19 @@ body {
   outline: none;
   height: 40vh;
   font-size: 15px;
+  padding: 5px 5px;
 }
 
 .input {
-  margin: 20px 7%;
+  margin: 20px 10%;
 }
 
 .banner {
   background-color: rgb(246, 246, 246);
-  padding: 10px 10px;
   margin: 0px;
   display: flex;
   border-bottom: 1px solid black;
+  padding: 20px;
 }
 
 .banner-content {
@@ -51,14 +55,18 @@ body {
   text-decoration: none;
   color: white;
   outline: none;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 #go-btn:hover {
-  transition: 0.3s;
+  transition: 0.2s;
   opacity: 1;
 }
 
+#fy {
+  font-weight: 700;
+  color: red;
+}
 
 
 

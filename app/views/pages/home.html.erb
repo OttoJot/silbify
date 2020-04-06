@@ -5,7 +5,7 @@
         <h1>
           Silbi
         </h1>
-        <h1 style='color: red'>
+        <h1 id="fy">
           fy
         </h1>
       </div>
@@ -14,18 +14,44 @@
 
   <body>
     <div class="input">
-      <textarea id="myTextarea"></textarea>
-
       <button id="go-btn" type="button" onclick="myFunction()">Go!</button>
 
-      <p id="demo"></p>
+      <textarea id="myTextarea"></textarea>
 
-      <script>
-      function myFunction() {
-        var x = document.getElementById("myTextarea").value;
-        document.getElementById("demo").innerHTML = x;
-      }
-      </script>
+      <p id="demo"></p>
     </div>
+
+
+
+    <script src="./patterns/en-us.js"></script>
+    <script src="././assets/javascrips/hyphen.js"></script>
+
+    <script type="text/javascript">
+      var hyphenate = createHyphenator(hyphenationPatternsEnUs, {
+        async: true,
+        debug: true,
+        hyphenChar: "-"
+      });
+
+      var el = document.getElementsByTagName("main")[0];
+      hyphenate(el.innerHTML).then(function(html) {
+        el.innerHTML = html;
+        clearTimeout(rollTO);
+      });
+    </script>
+
+    <div
+      id="roll"
+      style="position:fixed;right:10px;top:10px;width:40px;height:40px;background:red;"
+    ></div>
+    <script type="text/javascript">
+      var ang = 0,
+        rollTO;
+      (function roll() {
+        document.getElementById("roll").style.transform =
+          "rotate3d(0, 0, 1, " + ++ang + "deg)";
+        rollTO = setTimeout(roll, 16);
+      })();
+    </script>
   </body>
 </div>
